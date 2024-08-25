@@ -1,0 +1,184 @@
+<!-- <div class="flex-col h-100">
+  <mat-tab-group class="mt">
+    <mat-tab label="My Information"> -->
+
+      <div>
+        <mat-accordion>
+          <mat-expansion-panel expanded>
+            <mat-expansion-panel-header>
+              <mat-panel-title>
+                Demographics
+              </mat-panel-title>
+            </mat-expansion-panel-header>
+
+            <app-demographics [person]="myPerson"/>
+
+          </mat-expansion-panel>
+          <mat-expansion-panel>
+            <mat-expansion-panel-header>
+              <mat-panel-title>
+                Allergies
+              </mat-panel-title>
+            </mat-expansion-panel-header>
+            <app-allergies [allergies]="myAllergies"/>
+          </mat-expansion-panel>
+
+          <mat-expansion-panel>
+            <mat-expansion-panel-header>
+              <mat-panel-title>
+                Observations
+              </mat-panel-title>
+            </mat-expansion-panel-header>
+            <app-observations [observations]="myObservations"></app-observations>
+          </mat-expansion-panel>
+
+          <mat-expansion-panel>
+            <mat-expansion-panel-header>
+              <mat-panel-title>
+                Immunizations (Vaccinations)
+              </mat-panel-title>
+            </mat-expansion-panel-header>
+            <app-immunizations></app-immunizations>
+          </mat-expansion-panel>
+
+          <mat-expansion-panel>
+            <mat-expansion-panel-header>
+              <mat-panel-title>
+                Medications
+              </mat-panel-title>
+            </mat-expansion-panel-header>
+            <app-medications></app-medications>
+          </mat-expansion-panel>
+
+          <mat-expansion-panel>
+            <mat-expansion-panel-header>
+              <mat-panel-title>
+                Family History
+              </mat-panel-title>
+            </mat-expansion-panel-header>
+            <app-family-history></app-family-history>
+          </mat-expansion-panel>
+
+          <mat-expansion-panel>
+            <mat-expansion-panel-header>
+              <mat-panel-title>
+                Imaging
+              </mat-panel-title>
+            </mat-expansion-panel-header>
+            <app-imaging-study></app-imaging-study>
+          </mat-expansion-panel>
+
+          <mat-expansion-panel>
+            <mat-expansion-panel-header>
+              <mat-panel-title>
+                Issues
+              </mat-panel-title>
+            </mat-expansion-panel-header>
+            <app-detected-issue></app-detected-issue>
+          </mat-expansion-panel>
+
+          <mat-expansion-panel>
+            <mat-expansion-panel-header>
+              <mat-panel-title>
+                Procedures
+              </mat-panel-title>
+            </mat-expansion-panel-header>
+            <app-procedure></app-procedure>
+          </mat-expansion-panel>
+
+          <mat-expansion-panel>
+            <mat-expansion-panel-header>
+              <mat-panel-title>
+                Conditions
+              </mat-panel-title>
+            </mat-expansion-panel-header>
+            <app-condition></app-condition>
+          </mat-expansion-panel>
+
+          <mat-expansion-panel>
+            <mat-expansion-panel-header>
+              <mat-panel-title>
+                Adverse Events
+              </mat-panel-title>
+            </mat-expansion-panel-header>
+            <app-adverse-event></app-adverse-event>
+          </mat-expansion-panel>
+
+          <mat-expansion-panel>
+            <mat-expansion-panel-header>
+              <mat-panel-title>
+                Diagnostic Reports
+              </mat-panel-title>
+            </mat-expansion-panel-header>
+            <app-diagnostic-report></app-diagnostic-report>
+          </mat-expansion-panel>
+
+
+        </mat-accordion>
+      </div>
+    <!-- </mat-tab>
+    <mat-tab label="Documents">
+      <br />
+      <div style="display: flex; justify-content: center">
+        <button
+          mat-raised-button
+          style="font-size: 18px; padding: 24px 12px"
+          type="button"
+          color="primary"
+        >
+          Request Documents Now
+        </button>
+        <br />
+      </div>
+      <div style="display: flex; justify-content: center; margin-top: 8px">
+        <span style="font-size: 14px"
+          >Documents last retrieved Feb. 12, 2023 (7 months ago)</span
+        >
+      </div>
+      <div style="padding: 25px">
+        <table mat-table [dataSource]="dataSource" class="mat-elevation-z8">
+          <ng-container matColumnDef="name">
+            <th mat-header-cell *matHeaderCellDef>Name</th>
+            <td mat-cell *matCellDef="let entry">{{ entry.name }}</td>
+          </ng-container>
+          <ng-container matColumnDef="date">
+            <th mat-header-cell *matHeaderCellDef>Date</th>
+            <td mat-cell *matCellDef="let entry">
+              {{ entry.date | date : "longDate" }}
+            </td>
+          </ng-container>
+          <ng-container matColumnDef="type">
+            <th mat-header-cell *matHeaderCellDef>Type</th>
+            <td mat-cell *matCellDef="let entry">{{ entry.type }}</td>
+          </ng-container>
+          <ng-container matColumnDef="level">
+            <th mat-header-cell *matHeaderCellDef>Privacy Level</th>
+            <td mat-cell *matCellDef="let entry">{{ entry.level }}</td>
+          </ng-container>
+
+          <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+          <tr mat-row *matRowDef="let row; columns: displayedColumns"></tr>
+        </table>
+      </div>
+    </mat-tab>
+    <mat-tab label="Providers">
+      <div class="centerFlex">
+        <div class="provider">
+          <h3>Provider 1</h3>
+          <p>Information about provider 1</p>
+        </div>
+      </div>
+
+      <div class="centerFlex">
+        <div class="provider">
+          <div style="display: flex; align-items: center">
+            <span style="font-size: 72px; font-weight: 500; margin-left: 32px"
+              >+</span
+            >
+            <span style="font-size: 42px; margin-left: 32px">Add Provider</span>
+          </div>
+        </div>
+      </div>
+    </mat-tab>
+  </mat-tab-group>
+</div> -->
